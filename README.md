@@ -53,7 +53,7 @@ Here's a concise version for your project discussion:
    - Multilingual support.
    - Customization options for users.
 
----
+--------------------------------------
 Use the below folder struture..
 src/
 │
