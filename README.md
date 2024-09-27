@@ -55,18 +55,32 @@ Here's a concise version for your project discussion:
 
 --------------------------------------
 Use the below folder struture..
-src/
-│
-├── components/
-│   ├── ChildrenOverview.js
-│   ├── CaregiverOverview.js
-│   ├── FinancialOverview.js
-│   ├── Attendance.js
-│   └── EnrollmentsRecord.js
-│
-├── store/
-│   ├── actions.js
-│   ├── reducers.js
-│   └── store.js
-│
-└── App.js
+/dashboard-app
+├── /public
+│   └── index.html                  # Main HTML template
+├── /src
+│   ├── /components                 # Reusable UI components
+│   │   ├── Attendance.js           # Attendance component
+│   │   ├── CaregiverOverview.js     # Caregiver overview component
+│   │   ├── ChildrenOverview.js      # Children overview component
+│   │   ├── EnrollmentsRecord.js     # Enrollments record component
+│   │   └── FinancialOverview.js     # Financial overview component
+│   ├── /i18n                       # i18n language files and config
+│   │   ├── i18n.js                 # i18next configuration
+│   │   ├── /locales
+│   │   │   ├── en.json             # English translations
+│   │   │   └── es.json             # Spanish translations
+│   ├── /assets                     # Images, fonts, and other static assets
+│   ├── /store                      # Redux store for state management
+│   │   ├── actions.js              # Redux actions for API calls
+│   │   └── reducer.js              # Redux reducer to handle state
+│   ├── /theme                      # Theme-related context and styling
+│   │   └── ThemeContext.js         # React Context for dark mode
+│   ├── /utils                      # Utility functions, helpers
+│   │   └── api.js                  # API utility functions
+│   ├── App.js                      # Main application file (includes theme toggle, i18n, etc.)
+│   ├── App.css                     # Global CSS (including dark mode styles)
+│   ├── index.js                    # React entry point, wraps with Redux and ThemeProvider
+│   └── index.css                   # Base styles
+├── package.json                    # Project dependencies and scripts
+└── README.md                       # Documentation
