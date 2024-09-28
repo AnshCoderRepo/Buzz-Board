@@ -57,30 +57,30 @@ Here's a concise version for your project discussion:
 Use the below folder struture..
 /dashboard-app
 ├── /public
-│   └── index.html                  # Main HTML template
+│   └── index.html                # Main HTML template for the app
 ├── /src
-│   ├── /components                 # Reusable UI components
-│   │   ├── Attendance.js           # Attendance component
-│   │   ├── CaregiverOverview.js     # Caregiver overview component
-│   │   ├── ChildrenOverview.js      # Children overview component
-│   │   ├── EnrollmentsRecord.js     # Enrollments record component
-│   │   └── FinancialOverview.js     # Financial overview component
-│   ├── /i18n                       # i18n language files and config
-│   │   ├── i18n.js                 # i18next configuration
+│   ├── /components               # Reusable UI components
+│   │   ├── Attendance.js         # Displays attendance data (visual representation)
+│   │   ├── CaregiverOverview.js   # Displays caregiver overview data
+│   │   ├── ChildrenOverview.js    # Displays children overview data
+│   │   ├── EnrollmentsRecord.js   # Displays enrollment records (graph/chart)
+│   │   └── FinancialOverview.js   # Displays financial summary data
+│   ├── /i18n                     # Internationalization (i18n) related files
+│   │   ├── i18n.js               # Configuration for i18next (language support)
 │   │   ├── /locales
-│   │   │   ├── en.json             # English translations
-│   │   │   └── es.json             # Spanish translations
-│   ├── /assets                     # Images, fonts, and other static assets
-│   ├── /store                      # Redux store for state management
-│   │   ├── actions.js              # Redux actions for API calls
-│   │   └── reducer.js              # Redux reducer to handle state
-│   ├── /theme                      # Theme-related context and styling
-│   │   └── ThemeContext.js         # React Context for dark mode
-│   ├── /utils                      # Utility functions, helpers
-│   │   └── api.js                  # API utility functions
-│   ├── App.js                      # Main application file (includes theme toggle, i18n, etc.)
-│   ├── App.css                     # Global CSS (including dark mode styles)
-│   ├── index.js                    # React entry point, wraps with Redux and ThemeProvider
-│   └── index.css                   # Base styles
-├── package.json                    # Project dependencies and scripts
-└── README.md                       # Documentation
+│   │   │   ├── en.json           # English translation strings
+│   │   │   └── es.json           # Spanish translation strings
+│   ├── /assets                   # Static assets like images, fonts, and icons
+│   ├── /store                    # Redux-related files for state management
+│   │   ├── actions.js            # Defines Redux actions to fetch data from APIs
+│   │   └── reducer.js            # Redux reducers to handle application state
+│   ├── /theme                    # Dark mode and theming context
+│   │   └── ThemeContext.js       # React context to manage dark/light mode
+│   ├── /utils                    # Utility functions (e.g., for API requests)
+│   │   └── api.js                # API utility to handle fetching data
+│   ├── App.js                    # Main app component that ties everything together
+│   ├── App.css                   # Global styles (including dark mode styles)
+│   ├── index.js                  # Entry point, wraps app with Redux and ThemeProvider
+│   └── index.css                 # Base styles for the application
+├── package.json                  # Project dependencies and npm scripts
+└── README.md                     # Project documentation
