@@ -1,0 +1,28 @@
+/* Light Mode */
+.app-container.light-mode {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+/* Dark Mode */
+.app-container.dark-mode {
+  background-color: #1e1e1e;
+  color: #ffffff;
+}
+
+.card {
+  padding: 20px;
+  border-radius: 10px;
+  margin: 10px 0;
+  background-color: inherit;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Add theme-specific card styles */
+.light-mode .card {
+  background-color: #f9f9f9;
+}
+
+.dark-mode .card {
+  background-color: #2e2e2e;
+}
